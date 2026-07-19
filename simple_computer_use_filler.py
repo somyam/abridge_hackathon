@@ -287,7 +287,7 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
                     },
                     {
                         "type": "text_editor_20250728",
-                        "name": "str_replace_editor"
+                        "name": "str_replace_based_edit_tool"
                     },
                     {
                         "type": "computer_20250124",
