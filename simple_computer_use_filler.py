@@ -241,7 +241,11 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
 
         print(f"✅ Prompt generated ({len(prompt)} characters)")
         print(f"🎯 Target URL: {portal_url}")
-        print(f"🤖 Model: claude-3-5-sonnet-20241022")
+
+        # Try to use the latest available Sonnet model
+        # Computer Use requires Sonnet 3.5 from Oct 2024 or later
+        model_name = "claude-3-5-sonnet-20241022"
+        print(f"🤖 Model: {model_name}")
 
         # Check if we're likely inside the Docker container
         in_container = False
@@ -271,8 +275,9 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
             print("   3. Paste it into the Streamlit interface\n")
 
         try:
+            # Use beta.messages for computer use
             response = self.client.beta.messages.create(
-                model="claude-3-5-sonnet-20241022",
+                model=model_name,
                 max_tokens=4096,
                 tools=[
                     {
@@ -343,10 +348,29 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
             }
 
         except Exception as e:
-            print(f"\n❌ Error calling Computer Use API: {e}")
+            error_msg = str(e)
+            print(f"\n❌ Error calling Computer Use API: {error_msg}")
+
+            # Check if it's a model not found error
+            if "404" in error_msg or "not_found_error" in error_msg:
+                print("\n⚠️  MODEL NOT FOUND ERROR")
+                print("The model 'claude-3-5-sonnet-20241022' is not available.")
+                print("\nPossible reasons:")
+                print("  1. Your API key doesn't have access to this model")
+                print("  2. The model name has changed")
+                print("  3. Computer Use beta is not enabled for your account")
+                print("\n💡 WORKAROUND:")
+                print("  Use the Streamlit interface instead:")
+                print(f"  1. Open http://localhost:8501")
+                print(f"  2. The prompt is already saved in: {prompt_result['prompt_file']}")
+                print(f"  3. Copy the prompt and paste it into the interface")
+                print(f"  4. The Streamlit app has the Computer Use model configured correctly")
+
             return {
                 "success": False,
-                "error": str(e)
+                "error": error_msg,
+                "fallback_prompt_file": prompt_result.get("prompt_file"),
+                "recommendation": "Use Streamlit interface at http://localhost:8501"
             }
 
 
