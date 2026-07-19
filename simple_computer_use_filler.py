@@ -242,10 +242,12 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
         print(f"✅ Prompt generated ({len(prompt)} characters)")
         print(f"🎯 Target URL: {portal_url}")
 
-        # Use the same model as the Docker Streamlit app
-        # This is the model that's confirmed to work with Computer Use
-        model_name = "claude-sonnet-4-6"
+        # Computer Use is ONLY supported on specific Claude 3.5 Sonnet models
+        # Sonnet 4.6 does NOT support Computer Use tools
+        # We need to use Claude 3.5 Sonnet (the Oct 2022 release)
+        model_name = "claude-3-5-sonnet-20241022"
         print(f"🤖 Model: {model_name}")
+        print("⚠️  Note: Computer Use requires Claude 3.5 Sonnet, not Sonnet 4.6")
 
         # Check if we're likely inside the Docker container
         in_container = False
@@ -275,26 +277,26 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
             print("   3. Paste it into the Streamlit interface\n")
 
         try:
-            # Use beta.messages for computer use with updated tool types
-            # Sonnet 4.6 uses newer tool versions
+            # Use beta.messages for computer use
+            # Claude 3.5 Sonnet (Oct 2024) supports Computer Use with these tool versions
             response = self.client.beta.messages.create(
                 model=model_name,
                 max_tokens=4096,
                 tools=[
                     {
-                        "type": "bash_20250124",
-                        "name": "bash"
-                    },
-                    {
-                        "type": "text_editor_20250728",
-                        "name": "str_replace_based_edit_tool"
-                    },
-                    {
-                        "type": "computer_20250124",
+                        "type": "computer_20241022",
                         "name": "computer",
                         "display_width_px": 1024,
                         "display_height_px": 768,
                         "display_number": 1
+                    },
+                    {
+                        "type": "text_editor_20241022",
+                        "name": "str_replace_editor"
+                    },
+                    {
+                        "type": "bash_20241022",
+                        "name": "bash"
                     }
                 ],
                 messages=[
@@ -303,7 +305,7 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
                         "content": prompt
                     }
                 ],
-                betas=["computer-use-2025-01-24"]
+                betas=["computer-use-2024-10-22"]
             )
 
             print("\n" + "=" * 80)
