@@ -1,0 +1,33 @@
+{
+  "pipeline_run": "2026-07-18T14:46:54.631666",
+  "input_file": "patient_adverse_event_case.json",
+  "target_portal": "VAERS",
+  "reportable_event": true,
+  "execution_log": [
+    {
+      "agent": "PHI_Redactor",
+      "status": "completed",
+      "timestamp": "2026-07-18T14:44:46.749206",
+      "output_file": "patient_case_redacted.json"
+    },
+    {
+      "agent": "Adverse_Event_Extractor",
+      "status": "completed",
+      "timestamp": "2026-07-18T14:46:54.628734",
+      "has_reportable_event": true,
+      "output_file": "fda_extracted_data.json"
+    },
+    {
+      "agent": "Computer_Use_Form_Filler",
+      "status": "completed",
+      "timestamp": "2026-07-18T14:46:54.631548",
+      "prompt_file": "computer_use_prompt.txt",
+      "portal_url": "https://vaers.hhs.gov/esub/EsubController"
+    }
+  ],
+  "outputs": {
+    "redacted_data": "patient_case_redacted.json",
+    "fda_data": "fda_extracted_data.json",
+    "computer_use_prompt": "computer_use_prompt.txt"
+  }
+}

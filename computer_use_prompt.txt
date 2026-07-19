@@ -1,0 +1,133 @@
+You are helping fill out FDA MedWatch Form 3500 for VOLUNTARY reporting of adverse events.
+
+FDA FORM 3500 is used for reporting:
+- Prescription and OTC medicines
+- Biologics (blood components, gene therapies, cell/tissue transplants)
+- Medical devices
+- Combination products (pre-filled syringes, auto-injectors, inhalers)
+- Cosmetics
+- Cannabinoid/CBD products
+
+INSTRUCTIONS:
+1. Open Firefox and navigate to: https://www.accessdata.fda.gov/scripts/medwatch/index.cfm?action=professional.reporting1
+2. Take a screenshot to see the form fields
+3. Read each field label carefully and fill in the corresponding information below
+4. Handle multi-page forms by clicking "Next" or "Continue" buttons
+5. STOP before clicking the final "Submit" button - take a screenshot for human review
+
+PATIENT INFORMATION (DE-IDENTIFIED):
+- Patient Identifier: PATIENT_D9FD325B
+- Age: 32 years
+- Sex: Female
+- Weight: 145 lbs
+
+ADVERSE EVENT INFORMATION:
+{
+  "suspect_product": {
+    "name": "Dupilumab",
+    "brand": "Dupixent",
+    "manufacturer": "Regeneron Pharmaceuticals, Inc.",
+    "lot_number": "DP45782A",
+    "ndc": "00024-5911-02",
+    "formulation": "300mg/2mL pre-filled syringe",
+    "indication": "Moderate-to-severe atopic dermatitis"
+  },
+  "adverse_event": {
+    "event_description": "Severe bilateral conjunctivitis with mucopurulent discharge, photophobia, and decreased visual acuity",
+    "onset_date": "2023-12-25 (estimated - gradual onset over 2 weeks prior to visit 5)",
+    "event_date_reported": "2024-01-08",
+    "severity": "Serious",
+    "seriousness_criteria": [
+      "Required intervention to prevent permanent impairment (vision)",
+      "Medically important event requiring urgent ophthalmology referral"
+    ],
+    "outcome": "Recovering/Resolving after drug discontinuation",
+    "causality_assessment": "Probable - dupilumab-related (known adverse effect, temporal relationship)"
+  },
+  "treatment_timeline": {
+    "start_date": "2023-09-05",
+    "end_date": "2024-01-03",
+    "total_duration": "120 days (approximately 4 months)",
+    "total_exposure": "9 doses (Loading: 600mg; Maintenance: 8 x 300mg = 2400mg; Total: 3000mg)",
+    "reason_for_discontinuation": "Severe bilateral conjunctivitis (serious adverse event)"
+  },
+  "concomitant_medications_at_time_of_event": [
+    "Artificial tears (preservative-free) - over the counter",
+    "Triamcinolone acetonide 0.1% cream - as needed (rarely used)",
+    "Moisturizers - daily"
+  ],
+  "labs_at_time_of_event": "No labs drawn at visit 5. Most recent labs from visit 3 (2023-09-06) were within normal limits.",
+  "reporter_information": {
+    "reporter_name": "Dr. REPO",
+    "reporter_type": "Healthcare Professional - Physician",
+    "specialty": "Dermatology",
+    "organization": "Clinic FACI",
+    "relationship_to_patient": "Treating physician",
+    "report_date": "2024-01-08"
+  }
+}
+
+CLINICAL ENCOUNTERS:
+
+Visit 1 - 2023-06-08:
+  Chief Complaint: Worsening eczema on hands, arms, and neck
+  Assessment: N/A
+
+Visit 2 - 2023-06-01:
+  Chief Complaint: Follow-up for atopic dermatitis - partial improvement
+  Assessment: N/A
+
+Visit 3 - 2023-05-08:
+  Chief Complaint: Inadequate control of eczema with topical steroids
+  Assessment: N/A
+
+Visit 4 - 2024-03-27:
+  Chief Complaint: Follow-up after starting Dupixent - excellent improvement in eczema
+  Assessment: N/A
+
+Visit 5 - 2024-04-25:
+  Chief Complaint: Severe eye redness, pain, and discharge - worsening over past 2 weeks
+  Assessment: N/A
+
+
+FORM FILLING GUIDELINES:
+- Use the de-identified patient ID where patient name is requested
+- For dates, use the format DD-MMM-YYYY (e.g., 15-JAN-2024)
+- Fill in all available information from above
+- If a field asks for information not provided above, leave it blank or mark as "Unknown"
+- Take screenshots at each page transition
+- CRITICAL: Stop before final submission and show screenshot for human review
+
+FDA MEDWATCH FORM 3500 SECTIONS:
+SECTION A - PATIENT INFORMATION
+- Patient Identifier (use the de-identified ID above)
+- Age at time of event
+- Sex
+- Weight
+
+SECTION B - ADVERSE EVENT OR PRODUCT PROBLEM
+- Describe the adverse event or product problem
+- Include outcomes (death, hospitalization, disability, etc.)
+- Event date
+
+SECTION C - SUSPECT PRODUCT(S)
+- Product name (generic and brand)
+- Dose, frequency, and route
+- Therapy dates (start and stop)
+- Diagnosis for use
+- Lot number and NDC if available
+
+SECTION D - SUSPECT MEDICAL DEVICE (if applicable)
+- Leave blank for drug events
+
+SECTION E - REPORTER INFORMATION
+- Use "Automated System" or "Computer Use Demo" for reporter name
+- Leave contact information blank or use placeholder
+
+SECTION F - CONCOMITANT MEDICAL PRODUCTS
+- List other medications patient was taking
+
+SECTION G - OTHER RELEVANT HISTORY
+- Include relevant medical history and lab data
+
+Begin by navigating to the FDA MedWatch portal and taking a screenshot of the initial form.

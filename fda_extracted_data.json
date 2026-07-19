@@ -1,0 +1,177 @@
+{
+  "has_reportable_event": true,
+  "fda_medwatch_form_data": {
+    "form_metadata": {
+      "form_name": "FDA MedWatch Form 3500",
+      "form_version": "Voluntary Reporting",
+      "submission_type": "Initial Report",
+      "report_number_internal": "ENC-2847-005-AE-001",
+      "date_generated": "08-JAN-2024",
+      "data_integrity_note": "Source medical record contains non-chronological visit dates (Visit 2 date [12-JUL-2023] precedes Visit 1 date [12-AUG-2023]; Visit 4 date [14-NOV-2023] precedes Visit 3 date [10-FEB-2024]). Clinical narrative and timeline have been reconstructed based on logical treatment escalation sequence. Source record dates should be reconciled prior to or concurrent with formal FDA submission. All dates used herein reflect source data as documented; flagged discrepancies are noted inline."
+    },
+    "section_a_patient_information": {
+      "patient_identifier": "PATIENT_A31E7411",
+      "patient_name_deidentified": "Patient K.D.",
+      "age_at_event": "31 years",
+      "date_of_birth": "10-MAY-1992",
+      "sex": "Female",
+      "weight": "142 lbs (64.4 kg)",
+      "height": "5 feet 6 inches (167.6 cm)",
+      "bmi": "23.4 kg/m\u00b2",
+      "race": "White",
+      "ethnicity": "Not Hispanic or Latino",
+      "address": {
+        "city": "City_PAT",
+        "state": "MA",
+        "zip": "XXXXX",
+        "country": "US"
+      }
+    },
+    "section_b_adverse_event": {
+      "adverse_event_or_product_problem": [
+        "Adverse Event"
+      ],
+      "outcomes": [
+        "Required Intervention to Prevent Permanent Impairment or Damage",
+        "Other Serious Important Medical Event"
+      ],
+      "outcomes_not_checked": [
+        "Death",
+        "Life-Threatening",
+        "Hospitalization - Initial or Prolonged",
+        "Disability or Permanent Damage",
+        "Congenital Anomaly/Birth Defect"
+      ],
+      "date_of_event_onset": "03-OCT-2023",
+      "date_of_event_onset_note": "Estimated onset date; symptoms began approximately 2 weeks prior to urgent visit on 17-OCT-2023, placing onset at approximately 03-OCT-2023. Onset occurred approximately 4 weeks after dupilumab initiation (05-SEP-2023). Mild prodromal dry eye symptoms were noted at prior follow-up visit (14-NOV-2023 per source record; see data integrity note in form metadata regarding date sequencing).",
+      "date_of_this_report": "08-JAN-2024",
+      "describe_event_or_problem": "A 31-year-old female (Patient K.D., PATIENT_A31E7411) with a history of moderate-to-severe atopic dermatitis developed severe bilateral conjunctivitis following initiation of dupilumab (Dupixent) 300mg/2mL subcutaneous injection. Dupilumab was initiated on 05-SEP-2023 as a 600mg loading dose (two 300mg subcutaneous injections administered in-office), followed by 300mg subcutaneous injection every 2 weeks for moderate-to-severe atopic dermatitis inadequately controlled on topical corticosteroids (triamcinolone acetonide 0.1% cream and clobetasol propionate 0.05% ointment). Lot number: DP45782A; NDC: 00024-5911-02. At a follow-up visit approximately 6 weeks after initiation, the patient reported dramatic improvement in atopic dermatitis (pruritus reduced from 7/10 to 2/10) with mild eye dryness managed with over-the-counter preservative-free artificial tears, consistent with an early and known adverse effect of dupilumab (dupilumab-associated conjunctivitis, DAC). Approximately 4 weeks after dupilumab initiation (estimated onset 03-OCT-2023), the patient developed progressive bilateral conjunctivitis. Symptoms began as mild redness and dry sensation and escalated over approximately 2 weeks to severe bilateral conjunctivitis characterized by: significant bilateral eye pain, moderate photophobia, thick mucopurulent discharge (bilateral, worse in the morning), blurred vision, foreign body sensation bilaterally, and bilateral periorbital edema. The patient presented urgently on 17-OCT-2023. Last dupilumab injection was 5 days prior to the urgent visit. Artificial tears provided no relief. On examination at the urgent visit: bilateral periorbital edema with mild erythema; severe bilateral conjunctival injection (3+ redness); chemosis present bilaterally; thick mucopurulent discharge bilaterally; mild superficial punctate keratitis on fluorescein staining; visual acuity decreased to 20/30 right eye and 20/40 left eye (baseline 20/20 bilaterally); pupils equal, round, and reactive to light; photophobia present (moderate severity); foreign body sensation endorsed bilaterally. Vitals at urgent visit: BP 124/78 mmHg, HR 74 bpm, Temp 98.6\u00b0F (afebrile), RR 16/min, SpO2 99% on room air, weight 142 lbs. No alternative etiologies were identified: no trauma, no contact lens use, no sick contacts, patient was afebrile. Eczema remained well-controlled at the time of the adverse event (EASI Score 2.8, Mild; BSA affected <3%). Management: Dupilumab was permanently discontinued. Erythromycin ophthalmic ointment 0.5% was prescribed (0.5-inch ribbon to lower conjunctival sac, three times daily for 7 days) to rule out bacterial superinfection. Preservative-free artificial tears were prescribed every 2 hours while awake. Cool compresses were recommended. An urgent same-day ophthalmology referral was placed. The adverse event was reported to FDA MedWatch and to the manufacturer (Regeneron Pharmaceuticals) on 08-JAN-2024 by the treating dermatologist. Outcome at time of report: Recovering/Resolving following drug discontinuation. Causality assessment: Probable \u2014 dupilumab-associated conjunctivitis (DAC) is a known and labeled adverse effect of dupilumab; clear temporal relationship between drug initiation and symptom onset; progressive worsening correlating with continued drug exposure; prodromal mild dry eye symptoms noted at prior follow-up consistent with early DAC progression; absence of alternative explanations; expected improvement following drug discontinuation.",
+      "relevant_tests_and_laboratory_data": "Most recent laboratory data from 06-SEP-2023 (obtained at dupilumab initiation visit): CBC within normal limits (WBC 6.8 K/uL, RBC 4.52 M/uL, Hemoglobin 13.8 g/dL, Hematocrit 41.2%, Platelets 245 K/uL, Eosinophils absolute 0.42 K/uL [6.2%]); CMP within normal limits (Glucose 92 mg/dL, BUN 14 mg/dL, Creatinine 0.9 mg/dL, Sodium 140 mEq/L, Potassium 4.1 mEq/L, Chloride 102 mEq/L, CO2 24 mEq/L, Calcium 9.6 mg/dL, Total Protein 7.2 g/dL, Albumin 4.3 g/dL, ALT 22 U/L, AST 26 U/L, Alkaline Phosphatase 68 U/L). No laboratory data drawn at urgent visit (17-OCT-2023). Ophthalmologic findings at urgent visit: Visual acuity 20/30 OD, 20/40 OS (baseline 20/20 OU); fluorescein staining positive for mild superficial punctate keratitis; severe bilateral conjunctival injection (3+); chemosis bilaterally; thick mucopurulent discharge bilaterally.",
+      "other_relevant_history": "Atopic dermatitis (diagnosed age 8, moderate-to-severe at time of dupilumab initiation); seasonal allergies; mild intermittent asthma (well-controlled). Known drug allergy: Penicillin (rash, moderate severity). Family history: mother with eczema and allergic rhinitis; father with asthma; sibling with food allergies. Social history: never smoker, occasional alcohol use, software engineer. No prior surgeries. No contact lens use."
+    },
+    "section_c_product_availability": {
+      "product_available_for_evaluation": "No",
+      "product_returned_to_manufacturer": "Not applicable - biologic injectable; product consumed at time of administration",
+      "note": "Lot number DP45782A documented in medical record. Product was a pre-filled syringe administered subcutaneously; no remaining product available for evaluation."
+    },
+    "section_d_suspect_product": {
+      "product_1": {
+        "name_brand": "Dupixent (dupilumab)",
+        "name_generic": "Dupilumab",
+        "manufacturer": "Regeneron Pharmaceuticals, Inc.",
+        "manufacturer_address": "777 Old Saw Mill River Road, Tarrytown, NY 10591",
+        "co_manufacturer": "Sanofi",
+        "strength": "300 mg/2 mL (150 mg/mL)",
+        "formulation": "Solution for injection, pre-filled syringe",
+        "dose_or_amount": "Loading dose: 600 mg (two 300 mg subcutaneous injections on Day 1); Maintenance dose: 300 mg subcutaneous injection every 2 weeks",
+        "route": "Subcutaneous injection",
+        "frequency": "Every 2 weeks (maintenance); Loading dose x1 on initiation",
+        "therapy_dates_start": "05-SEP-2023",
+        "therapy_dates_stop": "03-JAN-2024",
+        "total_duration_of_therapy": "Approximately 120 days (approximately 4 months; 16 weeks)",
+        "total_doses_administered": "9 injections total: 1 loading dose of 600 mg (2 x 300 mg on 05-SEP-2023) + 8 maintenance doses of 300 mg every 2 weeks; Total cumulative dose: approximately 3000 mg",
+        "diagnosis_indication": "Moderate-to-severe atopic dermatitis, inadequately controlled on topical corticosteroids",
+        "lot_number": "DP45782A",
+        "expiration_date": "Not documented in source record",
+        "ndc_or_unique_id": "00024-5911-02",
+        "event_abated_after_stopping_product": "Yes \u2014 recovering/resolving after permanent discontinuation of dupilumab on 03-JAN-2024 (last dose date per source record)",
+        "event_reappeared_after_reintroduction": "Does Not Apply \u2014 drug was permanently discontinued; no rechallenge performed",
+        "concomitant_medical_products_at_time_of_event": [
+          {
+            "name": "Artificial tears, preservative-free",
+            "dose_frequency_route": "1-2 drops each eye, as needed, ophthalmic; over-the-counter",
+            "indication": "Dry eyes (early dupilumab-associated conjunctivitis symptom management)",
+            "status": "Ongoing at time of adverse event"
+          },
+          {
+            "name": "Triamcinolone acetonide",
+            "strength": "0.1% cream",
+            "dose_frequency_route": "Apply thin layer, as needed (rarely used), topical",
+            "indication": "Atopic dermatitis maintenance (PRN only at time of event)",
+            "status": "PRN use only at time of adverse event; largely discontinued due to excellent dupilumab response"
+          },
+          {
+            "name": "Fragrance-free moisturizer/emollient",
+            "dose_frequency_route": "Liberal application, daily, topical",
+            "indication": "Atopic dermatitis skin barrier maintenance",
+            "status": "Ongoing at time of adverse event"
+          }
+        ],
+        "products_discontinued_prior_to_event": [
+          {
+            "name": "Clobetasol propionate",
+            "strength": "0.05% ointment",
+            "dose_frequency_route": "Apply thin layer to hands, twice daily for 2 weeks then taper, topical",
+            "indication": "Severe hand eczema",
+            "status": "Discontinued prior to dupilumab initiation; short-term course only (30g tube, no refills)"
+          }
+        ]
+      }
+    },
+    "section_e_initial_reporter": {
+      "note": "Section E applies when the initial reporter differs from the reporter completing this form. In this case, the treating physician is both the initial reporter and the submitting reporter."
+    },
+    "section_f_other_relevant_history": {
+      "medical_history": "1. Atopic dermatitis (diagnosed age 8; moderate-to-severe at time of dupilumab initiation; EASI Score 16.8 at initiation visit; body surface area affected approximately 12% at initiation). 2. Seasonal allergies (allergic rhinitis, mild). 3. Asthma, mild intermittent, well-controlled. 4. No prior surgeries. 5. No prior systemic therapy for atopic dermatitis prior to dupilumab. Prior topical therapies: triamcinolone acetonide 0.1% cream (initiated 12-AUG-2023, continued); clobetasol propionate 0.05% ointment (short-term course, 2 weeks, discontinued). 6. Family history: mother with eczema and allergic rhinitis; father with asthma; sibling with food allergies. 7. Social history: never smoker; occasional alcohol use; occupation software engineer. 8. Atopic dermatitis treatment course summary: Initial presentation with moderate atopic dermatitis (EASI 18.4, BSA 15%) treated with triamcinolone acetonide 0.1% cream with partial improvement (EASI 11.2, BSA 8% at follow-up). Clobetasol propionate 0.05% ointment added for hands with temporary improvement but recurrence after discontinuation. Dupilumab initiated for moderate-to-severe disease inadequately controlled on topical therapy (EASI 16.8, BSA 12%). Excellent eczema response to dupilumab noted at follow-up (EASI 3.6, BSA 2%). Eczema remained well-controlled at time of adverse event (EASI 2.8, BSA <3%).",
+      "allergies": "1. Penicillin \u2014 reaction: rash; severity: moderate. 2. Pollen (seasonal) \u2014 reaction: rhinitis, congestion; severity: mild. No known food allergies. No prior adverse reactions to biologic therapies documented.",
+      "lab_data": "Baseline labs obtained at dupilumab initiation (06-SEP-2023, one day after first dose): CBC: WBC 6.8 K/uL (normal 4.0-11.0), RBC 4.52 M/uL (normal 4.0-5.5), Hemoglobin 13.8 g/dL (normal 12.0-16.0), Hematocrit 41.2% (normal 36-46%), Platelets 245 K/uL (normal 150-400), Eosinophils absolute 0.42 K/uL (normal 0.0-0.5), Eosinophils percent 6.2% (normal 0-8%) \u2014 all within normal limits. CMP: Glucose 92 mg/dL, BUN 14 mg/dL, Creatinine 0.9 mg/dL, Sodium 140 mEq/L, Potassium 4.1 mEq/L, Chloride 102 mEq/L, CO2 24 mEq/L, Calcium 9.6 mg/dL, Total Protein 7.2 g/dL, Albumin 4.3 g/dL, ALT 22 U/L, AST 26 U/L, Alkaline Phosphatase 68 U/L \u2014 all within normal limits. No laboratory data obtained at urgent visit (17-OCT-2023). Ophthalmologic examination findings at urgent visit (17-OCT-2023): Visual acuity 20/30 OD, 20/40 OS (documented baseline 20/20 OU); fluorescein staining: mild superficial punctate keratitis bilaterally; conjunctival injection: severe bilateral (3+); chemosis: present bilaterally; discharge: thick mucopurulent, bilateral, worse in morning; pupils: equal, round, reactive to light; photophobia: present, moderate severity; foreign body sensation: endorsed bilaterally; periorbital edema: bilateral, mild erythema.",
+      "additional_relevant_information": "Helminth infection screening performed at dupilumab initiation \u2014 endemic area history negative. No prior ophthalmologic history documented. No contact lens use. No trauma to eyes. No sick contacts identified. Patient was afebrile at urgent visit. Dupilumab-associated conjunctivitis (DAC) is a known and labeled adverse effect of dupilumab, with an incidence of approximately 10-28% in clinical trials for atopic dermatitis. The clinical presentation in this patient (bilateral conjunctivitis with mucopurulent discharge, photophobia, decreased visual acuity, and superficial punctate keratitis) is consistent with moderate-to-severe DAC. Prodromal mild dry eye symptoms were noted at the prior follow-up visit, consistent with early DAC progression prior to full clinical manifestation."
+    },
+    "section_g_reporter_information": {
+      "reporter_name": "Dr. REPO (de-identified)",
+      "occupation": "Physician",
+      "specialty": "Dermatology",
+      "health_professional": "Yes",
+      "organization": "Clinic FACI (de-identified)",
+      "address": "De-identified per reporting protocol",
+      "phone": "De-identified per reporting protocol",
+      "initial_reporter": "Yes \u2014 treating physician; also submitting reporter",
+      "relationship_to_patient": "Treating Physician (Dermatologist)",
+      "date_of_report": "08-JAN-2024",
+      "also_reported_to_manufacturer": "Yes \u2014 reported to Regeneron Pharmaceuticals, Inc. on 08-JAN-2024",
+      "reporter_requests_confidentiality": "Yes \u2014 reporter identity to be protected per 21 CFR 20.110"
+    },
+    "supplemental_narrative_and_causality_assessment": {
+      "causality_assessment": "Probable",
+      "causality_rationale": [
+        "1. Known and labeled adverse effect: Dupilumab-associated conjunctivitis (DAC) is a recognized and FDA-labeled adverse effect of dupilumab, with incidence of approximately 10-28% in atopic dermatitis clinical trials.",
+        "2. Temporal relationship: Symptom onset (estimated 03-OCT-2023) occurred approximately 4 weeks after dupilumab initiation (05-SEP-2023), consistent with the known time-to-onset profile of DAC.",
+        "3. Dose-response/exposure relationship: Progressive worsening of conjunctivitis correlated with continued dupilumab exposure over approximately 2 weeks prior to urgent presentation.",
+        "4. Prodromal symptoms: Mild dry eye symptoms noted at prior follow-up visit are consistent with early DAC progression, representing a continuum of the adverse effect.",
+        "5. Absence of alternative explanations: No trauma, no contact lens use, no sick contacts, afebrile; no other medications introduced that would explain bilateral conjunctivitis with mucopurulent discharge and keratitis.",
+        "6. Dechallenge: Drug permanently discontinued; outcome documented as recovering/resolving following discontinuation, consistent with expected resolution of DAC after drug withdrawal.",
+        "7. Rechallenge: Not performed; drug permanently discontinued due to severity of adverse event.",
+        "8. Severity and clinical features: Presentation with superficial punctate keratitis, chemosis, mucopurulent discharge, and decreased visual acuity (20/30 OD, 20/40 OS from baseline 20/20 OU) represents a clinically significant and serious manifestation of DAC requiring urgent specialist intervention."
+      ],
+      "seriousness_criteria_detailed": [
+        "Required Intervention to Prevent Permanent Impairment or Damage: Urgent same-day ophthalmology referral placed; erythromycin ophthalmic ointment 0.5% prescribed to rule out bacterial superinfection; dupilumab permanently discontinued; preservative-free artificial tears prescribed every 2 hours. Intervention was necessary to prevent potential permanent visual impairment given presence of superficial punctate keratitis and decreased visual acuity.",
+        "Other Serious Important Medical Event: Severity of conjunctivitis (3+ bilateral injection, chemosis, mucopurulent discharge, keratitis, decreased visual acuity, photophobia) was sufficient to warrant permanent discontinuation of an otherwise highly effective systemic therapy, urgent specialist referral, and prescription ophthalmic antibiotic therapy. Event significantly impacted patient quality of life and required urgent medical management."
+      ],
+      "action_taken_with_suspect_product": "Drug permanently discontinued on 03-JAN-2024 (last dose date per source record; urgent visit and discontinuation decision made 17-OCT-2023 \u2014 date discrepancy in source record noted; see form metadata data integrity note).",
+      "outcome_at_time_of_report": "Recovering/Resolving \u2014 improvement expected following dupilumab discontinuation; ophthalmology follow-up arranged for ongoing management.",
+      "follow_up_information_available": "Yes \u2014 ophthalmology follow-up scheduled same day as urgent dermatology visit (08-JAN-2024 per source record); dermatology follow-up scheduled in 2 weeks to reassess eczema control off dupilumab and discuss alternative systemic therapies."
+    }
+  },
+  "adverse_event_summary": {
+    "event_number": 1,
+    "event_description": "Severe bilateral conjunctivitis with mucopurulent discharge, photophobia, eye pain, and blurred vision requiring dupilumab discontinuation and ophthalmology referral",
+    "suspect_product": "Dupilumab 300mg/2mL (Dupixent) - Regeneron/Sanofi",
+    "event_onset_encounter": "Visit 5 (2023-10-17) - symptoms began approximately 2 weeks prior, placing onset around 2023-10-03, approximately 6-8 weeks after dupilumab initiation (Visit 3: 2024-02-10)",
+    "severity": "Serious",
+    "seriousness_criteria": [
+      "Required intervention to prevent permanent impairment (ophthalmology referral, antibiotic ophthalmic therapy, drug discontinuation)",
+      "Temporary visual impairment (blurred vision, photophobia) with potential for permanent damage if untreated",
+      "Other serious important medical event - severity sufficient to warrant permanent discontinuation of therapy and specialist referral"
+    ],
+    "outcome": "Recovering/Resolving",
+    "causality": "Probable",
+    "action_taken": "Drug permanently discontinued",
+    "clinical_narrative": "32-year-old female with moderate-to-severe atopic dermatitis was initiated on dupilumab 600mg loading dose followed by 300mg every 2 weeks (Visit 3, 2024-02-10) after inadequate control with topical corticosteroids (triamcinolone acetonide 0.1% and clobetasol propionate 0.05%). At 6-week follow-up (Visit 4, 2023-11-14 - NOTE: chronological discrepancy in source data; Visit 4 date precedes Visit 3 date, suggesting a data entry or sequencing error; clinical narrative reconstructed based on logical treatment progression), the patient reported dramatic improvement in atopic dermatitis (pruritus reduced from 7/10 to 2/10) with mild eye dryness managed with artificial tears, consistent with a known and common adverse effect of dupilumab. Approximately 6-8 weeks after dupilumab initiation, the patient developed progressive bilateral conjunctivitis beginning as mild redness and dry sensation, escalating over 2 weeks to severe bilateral conjunctivitis with significant eye pain, photophobia, mucopurulent discharge (especially in mornings), and blurred vision. At urgent visit (Visit 5, 2023-10-17), last dupilumab injection was 5 days prior. Artificial tears provided no relief. No alternative etiologies identified: no trauma, no contact lens use, no sick contacts, afebrile. Dupilumab was permanently discontinued, erythromycin ophthalmic ointment 0.5% was prescribed three times daily, and ophthalmology referral was placed. Causality assessed as Probable based on: (1) known and labeled adverse effect of dupilumab (dupilumab-associated conjunctivitis, DAC); (2) clear temporal relationship between drug initiation and symptom onset; (3) progressive worsening correlating with continued drug exposure; (4) absence of alternative explanations; (5) prodromal mild dry eye symptoms noted at prior follow-up consistent with early DAC progression; and (6) expected improvement following drug discontinuation. The event was previously reported to FDA MedWatch and manufacturer (Regeneron) on 2024-01-08 per documented provider notation. DATA INTEGRITY NOTE: Visit dates in source record appear non-chronological (Visit 2: 2023-07-12 precedes Visit 1: 2023-08-12; Visit 4: 2023-11-14 precedes Visit 3: 2024-02-10). Analysis was performed based on logical clinical sequence of treatment escalation rather than strict date ordering. This discrepancy should be reconciled in the source medical record prior to or concurrent with formal FDA MedWatch submission."
+  },
+  "_extraction_metadata": {
+    "extracted_by": "VigilantAI Adverse Event Extractor v1.0",
+    "model": "claude-sonnet-4-6",
+    "patient_token": "PATIENT_A31E7411",
+    "total_encounters_analyzed": 5
+  }
+}
