@@ -202,7 +202,14 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
     ) -> Dict:
         """
         Automatically submit prompt to Computer Use API
-        This directly calls the Anthropic API with Computer Use tools
+
+        IMPORTANT: This method attempts to call the Computer Use API directly.
+        For this to work, you need to either:
+        1. Run this script INSIDE the Docker container where the display is available
+        2. Or use save_prompt_to_file() and paste into localhost:8501
+
+        The Computer Use tools require access to the X11 display which only exists
+        inside the Docker container at localhost:8080/8501.
 
         Args:
             redacted_patient_data: De-identified patient data from Agent 1
@@ -212,10 +219,21 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
             Dict with API response and status
         """
 
-        if not self.client:
-            raise ValueError("ANTHROPIC_API_KEY not set - cannot use Computer Use API")
+        # First, save the prompt to file as a fallback
+        print("\n🖥️  PREPARING COMPUTER USE SUBMISSION...")
+        print("=" * 80)
 
-        print("\n🖥️  AUTO-SUBMITTING TO COMPUTER USE API...")
+        prompt_result = self.save_prompt_to_file(
+            redacted_patient_data=redacted_patient_data,
+            portal_url=portal_url
+        )
+
+        if not self.client:
+            print("\n⚠️  ANTHROPIC_API_KEY not set")
+            print("Prompt saved to file. Please use manual submission via localhost:8501")
+            return prompt_result
+
+        print("\n🖥️  ATTEMPTING AUTO-SUBMISSION TO COMPUTER USE API...")
         print("=" * 80)
 
         # Generate the prompt
@@ -223,31 +241,53 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
 
         print(f"✅ Prompt generated ({len(prompt)} characters)")
         print(f"🎯 Target URL: {portal_url}")
-        print(f"🤖 Model: claude-sonnet-4-6")
+        print(f"🤖 Model: claude-3-5-sonnet-20241022")
+
+        # Check if we're likely inside the Docker container
+        in_container = False
+        try:
+            # Check if DISPLAY is set (should be :1 in container)
+            display = os.getenv("DISPLAY")
+            if display == ":1":
+                in_container = True
+                print(f"✅ Detected DISPLAY={display} (likely in Docker container)")
+            else:
+                print(f"⚠️  DISPLAY={display or 'not set'} (not in Docker container)")
+                print("   Computer Use API may fail without access to X11 display")
+        except Exception:
+            pass
+
         print("=" * 80)
 
         # Call Computer Use API
         print("\n🚀 Starting Computer Use session...")
         print("(Claude will control a virtual browser to fill the FDA MedWatch form)\n")
 
+        if not in_container:
+            print("⚠️  WARNING: You may not be running inside the Docker container")
+            print("   If this fails, try:")
+            print("   1. Open http://localhost:8501 in your browser")
+            print("   2. Copy the prompt from computer_use_prompt.txt")
+            print("   3. Paste it into the Streamlit interface\n")
+
         try:
             response = self.client.beta.messages.create(
-                model="claude-sonnet-4-6",
+                model="claude-3-5-sonnet-20241022",
                 max_tokens=4096,
                 tools=[
                     {
-                        "type": "computer_20251124",
+                        "type": "computer_20241022",
                         "name": "computer",
                         "display_width_px": 1024,
                         "display_height_px": 768,
                         "display_number": 1
                     },
                     {
-                        "type": "text_editor_20250728",
-                        "name": "str_replace_based_edit_tool"
+                        "type": "text_editor_20241022",
+                        "name": "str_replace_editor"
                     },
                     {
-                        "type": "bash_20250124",
+                        "type": "bash_20241022",
                         "name": "bash"
                     }
                 ],
@@ -257,7 +297,7 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
                         "content": prompt
                     }
                 ],
-                betas=["computer-use-2025-11-24"]
+                betas=["computer-use-2024-10-22"]
             )
 
             print("\n" + "=" * 80)
