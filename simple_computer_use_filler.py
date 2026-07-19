@@ -242,9 +242,9 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
         print(f"✅ Prompt generated ({len(prompt)} characters)")
         print(f"🎯 Target URL: {portal_url}")
 
-        # Try to use the latest available Sonnet model
-        # Computer Use requires Sonnet 3.5 from Oct 2024 or later
-        model_name = "claude-3-5-sonnet-20241022"
+        # Use the same model as the Docker Streamlit app
+        # This is the model that's confirmed to work with Computer Use
+        model_name = "claude-sonnet-4-6"
         print(f"🤖 Model: {model_name}")
 
         # Check if we're likely inside the Docker container
@@ -354,10 +354,10 @@ Begin by navigating to the FDA MedWatch portal and taking a screenshot of the in
             # Check if it's a model not found error
             if "404" in error_msg or "not_found_error" in error_msg:
                 print("\n⚠️  MODEL NOT FOUND ERROR")
-                print("The model 'claude-3-5-sonnet-20241022' is not available.")
+                print(f"The model '{model_name}' is not available on your API key.")
                 print("\nPossible reasons:")
-                print("  1. Your API key doesn't have access to this model")
-                print("  2. The model name has changed")
+                print("  1. Your API key doesn't have access to Sonnet 4.6")
+                print("  2. Your account is on a different tier/region")
                 print("  3. Computer Use beta is not enabled for your account")
                 print("\n💡 WORKAROUND:")
                 print("  Use the Streamlit interface instead:")
